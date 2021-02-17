@@ -1,0 +1,76 @@
+:root {
+    --primary-bg: rgba(44,62,80 ,1);
+    --secondary-bg: rgba(0,0,0,0.9);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-bg);
+}
+.phone-body {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 700px;
+    box-shadow: 1px 0px 1px inset gold,
+    0px 1px 0 0px #cecece;
+    position: relative
+}
+
+.phone-body:after, .phone-body:before {
+    content: '';
+}
+
+.phone-body:after {
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    box-shadow: 1px 0px 1px gold;
+}
+
+
+.phone-body:before{
+    border-radius: 10%;
+    position: absolute;
+    width: 60px;
+    background: var(--primary-bg);
+    height: 10px;
+    top: 30px;
+}
+
+.phone-inner {
+    width: 320px;
+    height: 550px;
+    background: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.phone-inner:before, .phone-inner:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary-bg);
+    top: 10px;
+    position: absolute;
+}
+
+.phone-inner:before {
+    left: 100px;
+    top: 30px;
+}
+
+article {
+    padding: 10px;
+    background: rgba(255,255,255, 0.3);
+}
