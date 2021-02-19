@@ -3,9 +3,9 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     display: grid;
-    grid-template-rows: 500px 1fr;
+    grid-template-rows: 1fr 90px;
     grid-template-columns: 30px 1fr;
-    grid-template-areas: "aside main" "aside footer";
+    grid-template-areas: "aside main" "footer footer";
 }
 
 .aside {
